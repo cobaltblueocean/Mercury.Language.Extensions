@@ -65,3 +65,6 @@ Mercury.Language.Extensions/obj/Mercury.Language.Extensions.csproj.nuget.g.targe
 /.vs/ProjectEvaluation/mercury.language.extensions.metadata.v7.bin
 /.vs/ProjectEvaluation/mercury.language.extensions.projects.v7.bin
 /.vs
+/Mercury.Language.Extensions/bin/Debug/net8.0
+/Mercury.Language.Extensions.Test/bin/Debug/net8.0/cs
+/Mercury.Language.Extensions.Test/bin/Debug/net8.0

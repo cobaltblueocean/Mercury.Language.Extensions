@@ -200,7 +200,7 @@ namespace Mercury.Language.Amount
             ArgumentChecker.NoNulls(value1._data, "value1._data");
             ArgumentChecker.NoNulls(value2._data, "value2._data");
 
-            if ((value1._data != null) && (value2._data != null))
+            if ((value1 != null) && (value2 != null) && (value1._data != null) && (value2._data != null))
             {
                 var set1 = value1._data.Keys.ToHashSet();
                 var set2 = value2._data.Keys.ToHashSet();

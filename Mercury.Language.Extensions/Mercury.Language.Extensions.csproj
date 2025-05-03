@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>0.8.2.82</Version>
+    <Version>0.8.2.84</Version>
     <Title>Mercury Language Extension Package</Title>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Description>This is a package to extended libraries to enhance C# programming, especially easier migrate from Java.</Description>
@@ -140,7 +140,10 @@
 - Local Debug build
 
 [0.8.2.74]
-- Added 'Minus' methods to NodaTimeExtensions</PackageReleaseNotes>
+- Added 'Minus' methods to NodaTimeExtensions
+
+[0.8.2.83]
+- Updated target framwork from .NET 7 to .NET 8</PackageReleaseNotes>
     <ApplicationIcon>Mercury.ico</ApplicationIcon>
     <PackageIcon>Mercury.jpg</PackageIcon>
     <Product>Mercury Language Extension Package</Product>
@@ -162,15 +165,15 @@
 
   <ItemGroup>
     <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
-    <PackageReference Include="Mercury.Colt.Library" Version="0.9.3.44" />
-    <PackageReference Include="Mercury.Language.Core" Version="0.8.2.17" />
-    <PackageReference Include="NodaTime" Version="3.2.0" />
-    <PackageReference Include="System.Collections.Immutable" Version="9.0.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0" />
-    <PackageReference Include="System.Diagnostics.EventLog" Version="9.0.0" />
-    <PackageReference Include="System.Drawing.Common" Version="9.0.0" />
+    <PackageReference Include="MercuryTech.Colt.Library" Version="0.9.3.46" />
+    <PackageReference Include="MercuryTech.Test.Utility" Version="0.8.1.46" />
+    <PackageReference Include="NodaTime" Version="3.2.2" />
+    <PackageReference Include="System.Collections.Immutable" Version="9.0.4" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.4" />
+    <PackageReference Include="System.Diagnostics.EventLog" Version="9.0.4" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.4" />
     <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
-    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+    <PackageReference Include="System.Text.Json" Version="9.0.4" />
   </ItemGroup>
 
   <ItemGroup>

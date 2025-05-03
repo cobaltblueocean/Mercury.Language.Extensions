@@ -75,8 +75,7 @@ namespace Mercury.Language.Exceptions
         /// 
         /// <param name="message">Message providing some additional information.</param>
         /// 
-        public ConvergenceException(string message) :
-            base(message)
+        public ConvergenceException(string message) : base(message)
         { }
 
         /// <summary>
@@ -86,10 +85,8 @@ namespace Mercury.Language.Exceptions
         /// <param name="message">Message providing some additional information.</param>
         /// <param name="innerException">The exception that is the cause of the current exception.</param>
         /// 
-        public ConvergenceException(string message, Exception innerException) :
-            base(message, innerException)
+        public ConvergenceException(string message, Exception innerException) : base(message, innerException)
         { }
-
 
         /// <summary>
         ///   Initializes a new instance of the <see cref="ConvergenceException"/> class.
@@ -104,9 +101,8 @@ namespace Mercury.Language.Exceptions
         /// The class name is null or <see cref="P:System.Exception.HResult"/> is zero (0).
         /// </exception>
         /// 
-        protected ConvergenceException(SerializationInfo info, StreamingContext context) :
-            base(info, context)
+        [Obsolete("Deprecated")]
+        protected ConvergenceException(SerializationInfo info, StreamingContext context) : base(info, context)
         { }
-
     }
 }
