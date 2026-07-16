@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>0.8.2.84</Version>
+    <Version>0.8.2.85</Version>
     <Title>Mercury Language Extension Package</Title>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Description>This is a package to extended libraries to enhance C# programming, especially easier migrate from Java.</Description>
@@ -143,13 +143,20 @@
 - Added 'Minus' methods to NodaTimeExtensions
 
 [0.8.2.83]
-- Updated target framwork from .NET 7 to .NET 8</PackageReleaseNotes>
+- Updated target framwork from .NET 7 to .NET 8
+
+[0.8.2.85]
+- Updated target framwork from .NET 8 to .NET 10
+- Added Matrix classes</PackageReleaseNotes>
     <ApplicationIcon>Mercury.ico</ApplicationIcon>
     <PackageIcon>Mercury.jpg</PackageIcon>
     <Product>Mercury Language Extension Package</Product>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/cobaltblueocean/Mercury.Language.Extensions</PackageProjectUrl>
     <Copyright>Copyright (C) Mercury Technologies. All rights reserved.</Copyright>
+    <PackageId>MercuryTech.Language.Extensions</PackageId>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <!-- PackageReadmeFile and PackageLicenseFile removed to avoid require root placement of external files; leaving files as Pack=true so they are included as content. -->
   </PropertyGroup>
 
   <ItemGroup>
@@ -157,29 +164,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
-    <PackageReference Include="MercuryTech.Colt.Library" Version="0.9.3.46" />
-    <PackageReference Include="MercuryTech.Test.Utility" Version="0.8.1.46" />
-    <PackageReference Include="NodaTime" Version="3.2.2" />
-    <PackageReference Include="System.Collections.Immutable" Version="9.0.4" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.4" />
-    <PackageReference Include="System.Diagnostics.EventLog" Version="9.0.4" />
-    <PackageReference Include="System.Drawing.Common" Version="9.0.4" />
-    <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
-    <PackageReference Include="System.Text.Json" Version="9.0.4" />
+    <PackageReference Include="MercuryTech.Colt.Library" Version="0.9.3.47" />
+    <PackageReference Include="MercuryTech.Test.Utility" Version="0.8.1.47" />
+    <PackageReference Include="NodaTime" Version="3.3.2" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.9" />
+    <PackageReference Include="System.Diagnostics.EventLog" Version="10.0.9" />
+    <PackageReference Include="System.Drawing.Common" Version="10.0.9" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="Mercury.jpg">
       <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
+      <PackagePath></PackagePath>
     </None>
   </ItemGroup>
 
